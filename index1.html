@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8-Puzzle Game</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Top Button -->
+    <button id="top-button">Solve this puzzle to unlock my surprise!</button>
+
+    <h1>8-Puzzle Game</h1>
+
+    <div class="puzzle-container">
+      <!-- Puzzle Grid -->
+      <div class="puzzle-section">
+        <h3>Puzzle:</h3>
+        <div class="puzzle-grid" id="puzzle-grid">
+          <!-- Puzzle tiles will render here -->
+        </div>
+      </div>
+
+      <!-- Solution Grid -->
+      <div class="solution-section">
+        <h3>Solution:</h3>
+        <div class="puzzle-grid">
+          <div class="tile">1</div>
+          <div class="tile">2</div>
+          <div class="tile">3</div>
+          <div class="tile">4</div>
+          <div class="tile">5</div>
+          <div class="tile">6</div>
+          <div class="tile">7</div>
+          <div class="tile">8</div>
+          <div class="tile empty"></div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button onclick="shuffle()">Restart Puzzle</button>
+        <p id="status"></p>
+        <a href="https://www.example.com" id="next-link" class="hidden" target="_blank">Click the button for a surprise!</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="cript1.js"></script>
+</body>
+</html>
